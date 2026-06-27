@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us – Qhama's Little Angels</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a class="nav-logo" href="index.html">
+        <span>🌸</span>
+        <div>
+          <strong>Qhama's Little Angels</strong>
+          <small>Creche · Bloemfontein</small>
+        </div>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html" class="active">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="hero hero-pink">
+    <span class="hero-emoji">💌</span>
+    <h1>Get In Touch</h1>
+    <p>Send us a message, pop in for a visit, or give us a call — we're always happy to chat.</p>
+  </section>
+
+  <section class="section">
+    <div class="contact-grid">
+
+      <div class="info-block">
+        <div class="info-item">
+          <span class="info-icon">📍</span>
+          <div>
+            <h4>Our Address</h4>
+            <p>House 9922, Grassland 1<br>Bloemfontein, Free State<br>South Africa</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <span class="info-icon">✉️</span>
+          <div>
+            <h4>Email Us</h4>
+            <a href="mailto:Qhama20@outlook.com">Qhama20@outlook.com</a>
+          </div>
+        </div>
+        <div class="info-item">
+          <span class="info-icon">📞</span>
+          <div>
+            <h4>Call / WhatsApp</h4>
+            <p>Email us and we'll share our number with you directly.</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <span class="info-icon">📅</span>
+          <div>
+            <h4>Enrolment</h4>
+            <p>We accept children year-round. Contact us to check availability.</p>
+          </div>
+        </div>
+
+        <h3 style="margin-top:1.5rem;">Operating Hours</h3>
+        <table class="hours-table">
+          <thead><tr><th>Day</th><th>Hours</th></tr></thead>
+          <tbody>
+            <tr><td>Monday – Thursday</td><td>13:00 – 18:00</td></tr>
+            <tr><td>Friday</td><td>13:00 – 18:00</td></tr>
+            <tr><td>Saturday</td><td>10:00 - 14:00</td></tr>
+            <tr><td>Sunday</td><td>Closed</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="contact-form-box">
+        <h3>Send Us a Message 💬</h3>
+        <form id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name *</label>
+              <input type="text" id="name" placeholder="e.g. Sindiswa Seko" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone / WhatsApp</label>
+              <input type="tel" id="phone" placeholder="e.g. 072 000 0000">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" placeholder="you@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject *</label>
+            <select id="subject" required>
+              <option value="" disabled selected>Select a topic…</option>
+              <option>Enrolment Enquiry</option>
+              <option>Book a Visit / Tour</option>
+              <option>Fees & Payment Plans</option>
+              <option>Programme Information</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="child-age">Child's Age (if applicable)</label>
+            <select id="child-age">
+              <option value="" disabled selected>Select age group…</option>
+              <option>0 – 1 year (Baby)</option>
+              <option>1 – 2 years (Toddler)</option>
+              <option>2 – 3 years (Playgroup)</option>
+              <option>3 – 5 years (Pre-School)</option>
+              <option>5 – 6 years (Grade R Ready)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" placeholder="Tell us how we can help…" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+          <div class="form-success" id="formSuccess"></div>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-logo">Qhama's <span>Little Angels</span></div>
+    <p>Grassland 1, House 9922 · Bloemfontein · Free State</p>
+    <p><a href="mailto:Qhama20@outlook.com">Qhama20@outlook.com</a></p>
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    <p class="footer-copy">© <span class="year"></span> Afrikids Foundation. All rights reserved.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
